@@ -1,10 +1,10 @@
 // Load all language files explicitly to allow integration
 // with bundling tools like webpack and browserify
-var instructionsAr = require('./languages/translations/ar.json');
-var instructionsDa = require('./languages/translations/da.json');
+/*var instructionsAr = require('./languages/translations/ar.json');
+var instructionsDa = require('./languages/translations/da.json');*/
 var instructionsDe = require('./languages/translations/de.json');
 var instructionsEn = require('./languages/translations/en.json');
-var instructionsEo = require('./languages/translations/eo.json');
+/*var instructionsEo = require('./languages/translations/eo.json');
 var instructionsEs = require('./languages/translations/es.json');
 var instructionsEsEs = require('./languages/translations/es-ES.json');
 var instructionsFi = require('./languages/translations/fi.json');
@@ -29,20 +29,25 @@ var instructionsTr = require('./languages/translations/tr.json');
 var instructionsUk = require('./languages/translations/uk.json');
 var instructionsVi = require('./languages/translations/vi.json');
 var instructionsYo = require('./languages/translations/yo.json');
-var instructionsZhHans = require('./languages/translations/zh-Hans.json');
+var instructionsZhHans = require('./languages/translations/zh-Hans.json');*/
 
 // Load all grammar files
+/*
 var grammarDa = require('./languages/grammar/da.json');
 var grammarFr = require('./languages/grammar/fr.json');
 var grammarHu = require('./languages/grammar/hu.json');
 var grammarRu = require('./languages/grammar/ru.json');
+*/
 
 // Load all abbreviations files
+/*
 var abbreviationsBg = require('./languages/abbreviations/bg.json');
 var abbreviationsCa = require('./languages/abbreviations/ca.json');
 var abbreviationsDa = require('./languages/abbreviations/da.json');
+*/
 var abbreviationsDe = require('./languages/abbreviations/de.json');
 var abbreviationsEn = require('./languages/abbreviations/en.json');
+/*
 var abbreviationsEs = require('./languages/abbreviations/es.json');
 var abbreviationsFr = require('./languages/abbreviations/fr.json');
 var abbreviationsHe = require('./languages/abbreviations/he.json');
@@ -54,13 +59,17 @@ var abbreviationsSl = require('./languages/abbreviations/sl.json');
 var abbreviationsSv = require('./languages/abbreviations/sv.json');
 var abbreviationsUk = require('./languages/abbreviations/uk.json');
 var abbreviationsVi = require('./languages/abbreviations/vi.json');
+*/
 
 // Create a list of supported codes
 var instructions = {
+/*
     'ar': instructionsAr,
     'da': instructionsDa,
+*/
     'de': instructionsDe,
-    'en': instructionsEn,
+    'en': instructionsEn
+/*,
     'eo': instructionsEo,
     'es': instructionsEs,
     'es-ES': instructionsEsEs,
@@ -87,23 +96,29 @@ var instructions = {
     'vi': instructionsVi,
     'yo': instructionsYo,
     'zh-Hans': instructionsZhHans
+*/
 };
 
 // Create list of supported grammar
 var grammars = {
+/*
     'da': grammarDa,
     'fr': grammarFr,
     'hu': grammarHu,
     'ru': grammarRu
+*/
 };
 
 // Create list of supported abbrevations
 var abbreviations = {
+/*
     'bg': abbreviationsBg,
     'ca': abbreviationsCa,
     'da': abbreviationsDa,
+*/
     'de': abbreviationsDe,
-    'en': abbreviationsEn,
+    'en': abbreviationsEn
+/*,
     'es': abbreviationsEs,
     'fr': abbreviationsFr,
     'he': abbreviationsHe,
@@ -115,6 +130,7 @@ var abbreviations = {
     'sv': abbreviationsSv,
     'uk': abbreviationsUk,
     'vi': abbreviationsVi
+*/
 };
 module.exports = {
     supportedCodes: Object.keys(instructions),
